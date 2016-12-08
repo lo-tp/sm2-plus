@@ -1,0 +1,39 @@
+{
+  "name": "sm2-plus",
+  "version": "1.0.0",
+  "description": "A javascript implementation of a improved version of spaced repetition algorithm",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --reporter spec",
+    "build": "babel source/src --presets=babel-preset-es2015,babel-preset-stage-0 --out-dir distribution && babel source/test --presets=babel-preset-es2015,babel-preset-stage-0 --out-dir test  "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lo-tp/sm2-plus.git"
+  },
+  "keywords": [
+    "sm2",
+    "'spaced",
+    "repetition'",
+    "algorithm"
+  ],
+  "author": "lotp <lotp202@gmail.com> (blog.lotp.xyz)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lo-tp/sm2-plus/issues"
+  },
+  "homepage": "https://github.com/lo-tp/sm2-plus#readme",
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-plugin-transform-object-rest-spread": "^6.19.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "chai": "^3.5.0",
+    "eslint": "^3.11.1",
+    "eslint-config-airbnb": "^13.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.8.0",
+    "mocha": "^3.2.0"
+  }
+}
