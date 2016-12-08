@@ -18,7 +18,7 @@ const getPercentOverdue = (word, today) => {
   return calculated > 2 ? 2 : calculated;
 };
 
-const calculate = ( word, performanceRating, today ) => {
+const calculate = (word, performanceRating, today) => {
   const percentOverDue = getPercentOverdue(word, today);
 
   const difficulty = limitNumber(

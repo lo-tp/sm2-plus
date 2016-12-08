@@ -1,9 +1,10 @@
 {
   "name": "sm2-plus",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A javascript implementation of a improved version of spaced repetition algorithm",
-  "main": "index.js",
+  "main": "distribution/index.js",
   "scripts": {
+    "prepublish":"npm run build",
     "test": "./node_modules/.bin/mocha --reporter spec",
     "build": "babel source/src --presets=babel-preset-es2015,babel-preset-stage-0 --out-dir distribution && babel source/test --presets=babel-preset-es2015,babel-preset-stage-0 --out-dir test  "
   },

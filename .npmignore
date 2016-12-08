@@ -4,9 +4,5 @@ node_modules/
 # Ignore other files
 ###############################################################################################
 
-.eslintrc.js
-.jscsrc
-.npmignore
+source
 test
-!source/test/
-distribution/
