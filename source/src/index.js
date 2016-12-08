@@ -20,8 +20,6 @@ const getPercentOverdue = (word, today) => {
 
 const calculate = ( word, performanceRating, today ) => {
   const percentOverDue = getPercentOverdue(word, today);
-  console.info(today, performanceRating);
-  console.info(percentOverDue);
 
   const difficulty = limitNumber(
     word.difficulty + (8 - 9 * performanceRating) * percentOverDue / 17,
