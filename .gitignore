@@ -4,5 +4,6 @@ node_modules/
 # Ignore other files
 ###############################################################################################
 
-./test/
+test
+!source/test/
 distribution/

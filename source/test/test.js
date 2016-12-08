@@ -7,7 +7,6 @@ const getDaysSinceEpoch = () => (
 );
 
 const TODAY = getDaysSinceEpoch();
-
 const testData = [
 
   // correct for interval
