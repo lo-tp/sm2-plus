@@ -1,7 +1,7 @@
 ### sm2-plus
 ----
 
-This is a JS implementation of an refined version of SM2 algorithm invented by [**BlueRaja**][br] overcoming some of the inherent issues of the original version.
+This is a JS implementation of a refined version of the SM2 space repetition learning algorithm invented by [**BlueRaja**][br] overcoming some of the inherent issues of the original version.
 Details about what these issuses are and how [**BlueRaja**][br] solved them can be found in this [post][original].
 
 #### Installation
