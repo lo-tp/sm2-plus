@@ -41,6 +41,27 @@ The output should be:
 ```
 Among them `dueDate` is the date the next time when the item should be reviewed.
 
+#### Simulation
+It is good to be able to make a evaluation about how many times does the user has to study to totally remember a word in the best case.
+
+Thus a simulation method was export to do this job.
+
+The first argument is the initial difficulty and the second argument is the threshold below which a word can be seen as remembered. 
+```javascript
+import { simulte } from 'sm2-plus'
+simulate(0.3, 0.1);
+```
+
+The output would be like this, meaning that in the best condition, a user has to remember a word and select **BEST** 4 times to make sure that he has mastered the word whose initial difficulty is 0.3. 
+
+| Day           | Index         | Difficulty   |
+| ------------- | ------------- | -------------|
+| 0             | 1             |  0.3                |
+| 1             | 2             |  0.24117647058823527|
+| 2             | 3             |  0.18235294117647055|
+| 3             | 4             |  0.12352941176470585|
+| 4             | 5             |  0.06470588235294114|
+
 #### Algorithm Abstract
 
 Each item should be stored as the following structure:
