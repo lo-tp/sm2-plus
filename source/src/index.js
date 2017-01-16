@@ -41,7 +41,36 @@ const calculate = (word, performanceRating, today) => {
   };
 };
 
+const TODAY = 1000000;
+
+const initialRecord = {
+    interval: 1,
+    dueDate: TODAY,
+    update: TODAY - 1,
+  };
+
+const simulate = (difficulty, thrashHold) => {
+    let record = {
+          ...initialRecord,
+          difficulty,
+          dueDate: TODAY,
+          update: TODAY - 1,
+        };
+    let index = 1;
+    let day;
+    while (record.difficulty >= thrashHold) {
+      day = record.dueDate - TODAY;
+      console.info(`day: ${day} index: ${index} difficulty:${record.difficulty}`);
+      record = calculate(record, BEST, record.dueDate);
+      index += 1;
+    }
+
+    console.info(`day: ${day} index: ${index} difficulty:${record.difficulty}`);
+
+  };
+
 module.exports = {
+  simulate,
   calculate,
   getPercentOverdue,
   WORST,
