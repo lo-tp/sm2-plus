@@ -24,7 +24,7 @@ const testWord = {
   word: 'test',
   update: TODAY - 17,    
   difficulty: 0.2,
-  interval: 100,
+  interval: 100
 };
 
 console.info(calculate(testWord, BEST, TODAY));
@@ -48,7 +48,7 @@ Thus a simulation method was export to do this job.
 
 The first argument is the initial difficulty and the second argument is the threshold below which a word can be seen as remembered. 
 ```javascript
-import { simulte } from 'sm2-plus'
+import { simulate } from 'sm2-plus'
 simulate(0.3, 0.1);
 ```
 
