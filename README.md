@@ -1,3 +1,10 @@
+### Warning: this project has been deprecated
+The algorithm itself has some inherent flaws, open this [post](http://blog.lotp.xyz/2018/08/12/A-Simple-But-Effective-Spaced-Repitition-Algorithm-MS/) to see why this lib is being deprecated. 
+
+If you are still looking for a space repetition lib, check [memory-scheduler](https://github.com/lo-tp/memory-scheduler) in lieu of this lib.
+
+----
+
 ### sm2-plus
 ----
 

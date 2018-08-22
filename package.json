@@ -1,6 +1,6 @@
 {
   "name": "sm2-plus",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A javascript implementation of an improved version of SM2 spaced repetition algorithm",
   "main": "distribution/index.js",
   "scripts": {
