@@ -21,7 +21,7 @@ const testData = [
     nextUpdate: TODAY,
   },
   {
-    word: 'test',
+    word: 'me',
     update: TODAY - 17,
     performanceRating: BEST,
     difficulty: 0.2,
